@@ -1,6 +1,6 @@
 package com.basics;
 // 表示Hello是一个类，一个public公有的类，Hello要与文件名一致
-public class Hello {
+public class Bianliang {
     // main方法
     public static void main(String[] args){
         // 定义变量

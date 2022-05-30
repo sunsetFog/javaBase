@@ -21,8 +21,8 @@ public class Oriented {
         System.out.println("第二只猫：" + cat2.name + "---" + cat2.age + "---" + cat2.color);
         // 静态变量从类加载就创建了，所以用类访问静态变量
         System.out.println("用类访问静态变量：" + Cat.count );// 私有就报错了 Cat.age报错--普通属性不能用类访问
-        System.out.println("第一只猫的静态变量：" + cat1.count );// 2
-        System.out.println("第二只猫的静态变量：" + cat2.count );// 2
+        System.out.println("实例化第一只猫，访问静态变量：" + cat1.count );// 2
+        System.out.println("实例化第二只猫，访问静态变量：" + cat2.count );// 2
 
         cat1.speak(7);
 
@@ -64,7 +64,7 @@ class Cat {
     // 栈：存放基本数据类型（局部变量）
     // 堆：存放对象
     // 方法区: 常量池，类加载信息
-    public void speak(int hnh) {// public表示方法公开   void表示方法可以return不能返回值  speak方法名 ()形参列表  {}方法体
+    public void speak(int hnh) {// public表示方法公开     speak方法名 ()形参列表  {}方法体
         System.out.println("成员方法，没有return" + hnh);
         // 同一个类中，可以直接调用方法
         apple(54,6);// (54,6)实参和形参：相同类型或兼容类型（double转int、byte转int）， 个数和顺序要一致

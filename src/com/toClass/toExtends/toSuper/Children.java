@@ -20,7 +20,7 @@ public class Children extends Parent {
     }
     // 子有参构造器
     public Children(String city) {
-        super("小爱同学");
+        super("小爱同学");// 等于 this("小爱同学");
         this.eat();// this关键字 调用自己的方法
         super.eat();// super 调用父类方法
         eat();

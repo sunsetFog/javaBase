@@ -1,6 +1,6 @@
 package com.basics;
 // 四种进制
-public class BaseSystem {
+public class jinzhi {
     public static void main(String[] args){
         int n1 = 0b1010;// 二进制   0，1表示  满2进1   以0B(0b)开头
         int n2 = 1010;// 十进制   0~9表示  满10进1

@@ -1,4 +1,4 @@
-package com.Array;
+package com.basics.arrays_;
 
 public class isFor {
     public static void main(String[] args) {

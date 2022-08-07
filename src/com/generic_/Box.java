@@ -1,4 +1,4 @@
-package com.toGenerics;
+package com.generic_;
 
 import java.io.Serializable;
 

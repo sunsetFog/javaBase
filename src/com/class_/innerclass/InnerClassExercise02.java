@@ -1,5 +1,5 @@
 package com.class_.innerclass;
-
+// ---匿名内部类---
 public class InnerClassExercise02 {
     public static void main(String[] args) {
         /*

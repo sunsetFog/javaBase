@@ -1,7 +1,5 @@
 package com.class_.innerclass;
-/**
- * 演示局部内部类的使用
- */
+// ---局部内部类---
 public class LocalInnerClass {//
     public static void main(String[] args) {
         //演示一遍

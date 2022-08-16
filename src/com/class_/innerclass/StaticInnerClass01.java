@@ -1,5 +1,5 @@
 package com.class_.innerclass;
-
+// ---静态内部类---
 public class StaticInnerClass01 {
     public static void main(String[] args) {
         Outer10 outer10 = new Outer10();

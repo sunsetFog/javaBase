@@ -1,7 +1,5 @@
 package com.class_.innerclass;
-
-import com.class_.abstract_.AA;
-
+// ---匿名内部类---
 public class InnerClassExercise01 {
     public static void main(String[] args) {
 

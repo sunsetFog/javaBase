@@ -1,9 +1,7 @@
 package com.class_.innerclass;
 
 
-/**
- * 演示匿名内部类的使用
- */
+// ---匿名内部类---
 public class AnonymousInnerClass {
     public static void main(String[] args) {
         Outer04 outer04 = new Outer04();
@@ -40,7 +38,7 @@ class Outer04 { //外部类
                 System.out.println("老虎叫唤...");
             }
         };
-        System.out.println("tiger的运行类型=" + tiger.getClass());
+        System.out.println("tiger的运行类型=" + tiger.getClass());// com.class_.innerclass.Outer04$1
         tiger.cry();
         tiger.cry();
         tiger.cry();

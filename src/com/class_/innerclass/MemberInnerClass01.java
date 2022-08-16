@@ -1,5 +1,5 @@
 package com.class_.innerclass;
-
+// ---成员内部类---
 public class MemberInnerClass01 {
     public static void main(String[] args) {
         Outer08 outer08 = new Outer08();

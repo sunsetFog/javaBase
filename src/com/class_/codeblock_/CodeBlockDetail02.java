@@ -2,36 +2,58 @@ package com.class_.codeblock_;
 
 public class CodeBlockDetail02 {
     public static void main(String[] args) {
-        A a = new A();// (1) A 静态代码块01 (2) getN1被调用...(3)A 普通代码块01(4)getN2被调用...(5)A() 构造器被调用
+        // 仔细看执行顺序
+        new B02();
     }
 }
 
-class A {
-    { //普通代码块
-        System.out.println("A 普通代码块01");
+class A02 { //父类
+    private static int n1 = getVal01();
+    static {
+        System.out.println("A02静态代码块..");//(2)
     }
-    private int n2 = getN2();//普通属性的初始化
-
-
-    static { //静态代码块
-        System.out.println("A 静态代码块01");
+    {
+        System.out.println("A02普通代码块..");//(5)
     }
-
-    //静态属性的初始化
-    private static  int n1 = getN1();
-
-    public static int getN1() {
-        System.out.println("getN1被调用...");
-        return 100;
-    }
-    public int getN2() { //普通方法/非静态方法
-        System.out.println("getN2被调用...");
-        return 200;
+    public int n3 = getVal02();
+    public static int getVal01() {
+        System.out.println("A02静态成员");//(1)
+        return 10;
     }
 
-    //无参构造器
-    public A() {
-        System.out.println("A() 构造器被调用");
+    public int getVal02() {
+        System.out.println("A02普通成员");//(6)
+        return 10;
     }
 
+    public A02() {//构造器
+        System.out.println("A02构造器");//(7)
+    }
+
+}
+
+class B02 extends A02 {
+
+    private static int n3 = getVal03();
+
+    static {
+        System.out.println("B02静态代码块..");//(4)
+    }
+    public int n5 = getVal04();
+    {
+        System.out.println("B02普通代码块..");//(9)
+    }
+
+    public static int getVal03() {
+        System.out.println("B02静态成员");//(3)
+        return 10;
+    }
+
+    public int getVal04() {
+        System.out.println("B02普通成员");//(8)
+        return 10;
+    }
+    public B02() {//构造器
+        System.out.println("B02构造器");
+    }
 }

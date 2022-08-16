@@ -1,9 +1,6 @@
 package com.generic_.customgeneric;
 
-/**
- * @author 韩顺平
- * @version 1.0
- */
+// 泛型接口
 public class CustomInterfaceGeneric {
     public static void main(String[] args) {
 
@@ -17,12 +14,11 @@ public class CustomInterfaceGeneric {
  *  3. 没有指定类型，默认为Object
  */
 
-//在继承接口 指定泛型接口的类型
+//接口继承接口 指定泛型接口的类型
 interface IA extends IUsb<String, Double> {
 
 }
-//当我们去实现IA接口时，因为IA在继承IUsu 接口时，指定了U 为String R为Double
-//，在实现IUsu接口的方法时，使用String替换U, 是Double替换R
+//类实现接口
 class AA implements IA {
 
     @Override
@@ -38,10 +34,10 @@ class AA implements IA {
 
     }
 }
-
-//实现接口时，直接指定泛型接口的类型
-//给U 指定Integer 给 R 指定了 Float
-//所以，当我们实现IUsb方法时，会使用Integer替换U, 使用Float替换R
+/*
+    类实现泛型接口
+    实现接口时，直接指定泛型接口的类型，给U 指定Integer 给 R 指定了 Float
+*/
 class BB implements IUsb<Integer, Float> {
 
     @Override
@@ -59,9 +55,12 @@ class BB implements IUsb<Integer, Float> {
 
     }
 }
-//没有指定类型，默认为Object
-//建议直接写成 IUsb<Object,Object>
-class CC implements IUsb { //等价 class CC implements IUsb<Object,Object> {
+/*
+    类实现泛型接口
+    没有指定类型，默认为<Object,Object>
+    建议直接写成 IUsb<Object,Object>
+*/
+class CC implements IUsb { // 等价 class CC implements IUsb<Object,Object> {
     @Override
     public Object get(Object o) {
         return null;
@@ -75,7 +74,7 @@ class CC implements IUsb { //等价 class CC implements IUsb<Object,Object> {
     }
 
 }
-
+// 泛型接口
 interface IUsb<U, R> {
 
     int n = 10;

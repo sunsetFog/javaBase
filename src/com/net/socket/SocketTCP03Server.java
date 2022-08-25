@@ -7,7 +7,7 @@ import java.net.Socket;
 /**
  * @author 韩顺平
  * @version 1.0
- * 服务端, 使用字符流方式读写
+ * 服务端, 使用《字符流》方式读写
  */
 @SuppressWarnings({"all"})
 public class SocketTCP03Server {

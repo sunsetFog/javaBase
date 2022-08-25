@@ -7,7 +7,7 @@ import java.net.Socket;
 /**
  * @author 韩顺平
  * @version 1.0
- * 客户端，发送 "hello, server" 给服务端， 使用字符流
+ * 客户端，发送 "hello, server" 给服务端， 使用《字符流》
  */
 @SuppressWarnings({"all"})
 public class SocketTCP03Client {

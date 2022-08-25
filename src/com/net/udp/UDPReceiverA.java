@@ -9,6 +9,7 @@ import java.net.SocketException;
 /**
  * @author 韩顺平
  * @version 1.0
+ * UDP网络编程
  * UDP接收端
  */
 public class UDPReceiverA {
@@ -38,7 +39,7 @@ public class UDPReceiverA {
         data = "好的, 明天见".getBytes();
         //说明: 封装的 DatagramPacket对象 data 内容字节数组 , data.length , 主机(IP) , 端口
         packet =
-                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.12.1"), 9998);
+                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.1.103"), 9998);
 
         socket.send(packet);//发送
 

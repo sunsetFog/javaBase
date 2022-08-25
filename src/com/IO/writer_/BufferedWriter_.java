@@ -4,14 +4,13 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- * @author 韩顺平
- * @version 1.0
- * 演示BufferedWriter的使用
- */
+/*
+处理流/包装流
+演示BufferedWriter的使用
+*/
 public class BufferedWriter_ {
     public static void main(String[] args) throws IOException {
-        String filePath = "e:\\ok.txt";
+        String filePath = "d:\\upload\\ok.txt";
         //创建BufferedWriter
         //说明:
         //1. new FileWriter(filePath, true) 表示以追加的方式写入

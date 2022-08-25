@@ -1,4 +1,4 @@
-package com.generic_.generic;
+package com.generic_.study;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 泛型细节
  */
 @SuppressWarnings({"all"})
 public class GenericDetail {
@@ -19,7 +20,7 @@ public class GenericDetail {
         //在给泛型指定具体类型后，可以传入该类型或者其子类类型
         Pig<A> aPig = new Pig<A>(new A());
         aPig.f();
-        Pig<A> aPig2 = new Pig<A>(new B());
+        Pig<A> aPig2 = new Pig<A>(new B());// 可以，因为B继承了A
         aPig2.f();
 
         //3. 泛型的使用形式

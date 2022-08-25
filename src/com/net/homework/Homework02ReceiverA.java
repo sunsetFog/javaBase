@@ -42,7 +42,7 @@ public class Homework02ReceiverA {
         data = answer.getBytes();
         //说明: 封装的 DatagramPacket对象 data 内容字节数组 , data.length , 主机(IP) , 端口
         packet =
-                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.12.1"), 9998);
+                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.1.103"), 9998);
 
         socket.send(packet);//发送
 

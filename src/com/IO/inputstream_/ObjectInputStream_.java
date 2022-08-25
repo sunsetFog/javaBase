@@ -9,6 +9,7 @@ import java.io.*;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 对象流  序列化
  */
 public class ObjectInputStream_ {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
@@ -23,12 +24,12 @@ public class ObjectInputStream_ {
         //1. 读取(反序列化)的顺序需要和你保存数据(序列化)的顺序一致
         //2. 否则会出现异常
 
-//        System.out.println(ois.readInt());
-//        System.out.println(ois.readBoolean());
-//
-//        System.out.println(ois.readChar());
-//        System.out.println(ois.readDouble());
-//        System.out.println(ois.readUTF());
+        System.out.println(ois.readInt());
+        System.out.println(ois.readBoolean());
+
+        System.out.println(ois.readChar());
+        System.out.println(ois.readDouble());
+        System.out.println(ois.readUTF());
 
 
         //dog 的编译类型是 Object , dog 的运行类型是 Dog

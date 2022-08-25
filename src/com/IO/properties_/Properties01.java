@@ -8,6 +8,7 @@ import java.io.IOException;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 传统方法  不能修改   不建议使用
  */
 public class Properties01 {
     public static void main(String[] args) throws IOException {

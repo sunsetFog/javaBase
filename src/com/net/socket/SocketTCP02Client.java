@@ -9,9 +9,9 @@ import java.net.Socket;
 /**
  * @author 韩顺平
  * @version 1.0
- * 客户端，发送 "hello, server" 给服务端
+ * 客户端，发送 "hello, server" 给服务端，使用《字节流》
  */
-@SuppressWarnings({"all"})
+@SuppressWarnings({"all"})// 代码重复，抑制警告
 public class SocketTCP02Client {
     public static void main(String[] args) throws IOException {
         //思路

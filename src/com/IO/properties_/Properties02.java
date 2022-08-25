@@ -8,11 +8,10 @@ import java.util.Properties;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 使用Properties 类来读取mysql.properties 文件
  */
 public class Properties02 {
     public static void main(String[] args) throws IOException {
-        //使用Properties 类来读取mysql.properties 文件
-
         //1. 创建Properties 对象
         Properties properties = new Properties();
         //2. 加载指定配置文件

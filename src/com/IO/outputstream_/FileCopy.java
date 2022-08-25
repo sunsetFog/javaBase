@@ -4,13 +4,11 @@ import com.IO.inputstream_.FileInputStream_;
 
 import java.io.*;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+文件拷贝   将D:\\upload\\1.png拷贝到D:\\upload\\2.png
  */
 public class FileCopy {
     public static void main(String[] args) {
-        //完成 文件拷贝，将 e:\\Koala.jpg 拷贝 c:\\
         //思路分析
         //1. 创建文件的输入流 , 将文件读入到程序
         //2. 创建文件的输出流， 将读取到的文件数据，写入到指定的文件.

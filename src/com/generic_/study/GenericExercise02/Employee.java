@@ -1,4 +1,4 @@
-package com.generic_.generic;
+package com.generic_.study.GenericExercise02;
 
 /**
  * @author 韩顺平

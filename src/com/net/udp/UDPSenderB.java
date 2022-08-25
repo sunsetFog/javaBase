@@ -6,6 +6,7 @@ import java.net.*;
 /**
  * @author 韩顺平
  * @version 1.0
+ * UDP网络编程
  * 发送端B ====> 也可以接收数据
  */
 @SuppressWarnings({"all"})
@@ -20,7 +21,7 @@ public class UDPSenderB {
 
         //说明: 封装的 DatagramPacket对象 data 内容字节数组 , data.length , 主机(IP) , 端口
         DatagramPacket packet =
-                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.12.1"), 9999);
+                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.1.103"), 9999);
 
         socket.send(packet);
 

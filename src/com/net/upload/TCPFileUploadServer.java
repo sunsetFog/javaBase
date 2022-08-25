@@ -15,7 +15,7 @@ public class TCPFileUploadServer {
         //1. 服务端在本机监听8888端口
         ServerSocket serverSocket = new ServerSocket(8888);
         System.out.println("服务端在8888端口监听....");
-        //2. 等待连接
+        //2. 等待连接，连接上才会往下执行
         Socket socket = serverSocket.accept();
 
 
@@ -24,7 +24,7 @@ public class TCPFileUploadServer {
         BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
         byte[] bytes = StreamUtils.streamToByteArray(bis);
         //4. 将得到 bytes 数组，写入到指定的路径，就得到一个文件了
-        String destFilePath = "src\\abc.mp4";
+        String destFilePath = "src\\1.png";
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destFilePath));
         bos.write(bytes);
         bos.close();

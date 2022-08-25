@@ -7,7 +7,9 @@ import java.io.Serializable;
 /**
  * @author 韩顺平
  * @version 1.0
- * 演示ObjectOutputStream的使用, 完成数据的序列化
+ * 对象流 反序列化
+ * 演示ObjectOutputStream的使用, 完成数据的反序列化
+ * 必须实现了 Serializable才能反序列化
  */
 public class ObjectOutStream_ {
     public static void main(String[] args) throws Exception {

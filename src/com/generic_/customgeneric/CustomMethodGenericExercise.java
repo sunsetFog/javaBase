@@ -3,6 +3,7 @@ package com.generic_.customgeneric;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 练习案例
  */
 public class CustomMethodGenericExercise {
     public static void main(String[] args) {

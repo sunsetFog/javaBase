@@ -8,10 +8,10 @@ import java.util.Properties;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 使用Properties 类来创建 配置文件, 修改配置文件内容
  */
 public class Properties03 {
     public static void main(String[] args) throws IOException {
-        //使用Properties 类来创建 配置文件, 修改配置文件内容
 
         Properties properties = new Properties();
         //创建

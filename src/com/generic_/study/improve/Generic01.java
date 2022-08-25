@@ -1,10 +1,11 @@
-package com.generic_.generic;
+package com.generic_.study.improve;
 
 import java.util.ArrayList;
 
 /**
  * @author 韩顺平
  * @version 1.0
+ * 引出泛型
  */
 @SuppressWarnings({"all"})
 public class Generic01 {

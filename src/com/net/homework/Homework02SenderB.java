@@ -26,7 +26,7 @@ public class Homework02SenderB {
 
         //说明: 封装的 DatagramPacket对象 data 内容字节数组 , data.length , 主机(IP) , 端口
         DatagramPacket packet =
-                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.12.1"), 8888);
+                new DatagramPacket(data, data.length, InetAddress.getByName("192.168.1.103"), 8888);
 
         socket.send(packet);
 

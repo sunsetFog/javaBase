@@ -1,4 +1,4 @@
-package com.generic_.generic;
+package com.generic_.study.GenericExercise02;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -6,6 +6,7 @@ import java.util.Comparator;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 排序封装
  */
 @SuppressWarnings({"all"})
 public class GenericExercise02 {
@@ -29,11 +30,17 @@ public class GenericExercise02 {
                     return 0;
                 }
                 //比较name
-                int i = emp1.getName().compareTo(emp2.getName());
+                int i = emp1.getName().compareTo(emp2.getName());// compareTo是来自String类
                 if(i != 0) {
                     return i;
                 }
 
+
+                // 比较year    emp1.getBirthday()看返回值，所以继续.getYear()
+//                int yearMinus = emp1.getBirthday().getYear() - emp2.getBirthday().getYear();
+//                if(yearMinus != 0) {
+//                    return  yearMinus;
+//                }
                 //下面是对birthday的比较，因此，我们最好把这个比较，放在MyDate类完成
                 //封装后，将来可维护性和复用性，就大大增强.
                 return emp1.getBirthday().compareTo(emp2.getBirthday());

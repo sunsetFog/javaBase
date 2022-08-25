@@ -6,6 +6,7 @@ import java.util.Arrays;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 自定义泛型
  */
 @SuppressWarnings({"all"})
 public class CustomGeneric_ {
@@ -35,7 +36,7 @@ class Tiger<T, R, M> {
     R r; //属性使用到泛型
     M m;
     T t;
-    //因为数组在new 不能确定T的类型，就无法在内存开空间
+//    T[] ts = new T[8];错误，因为数组在new 不能确定T的类型，就无法在内存开空间
     T[] ts;
 
     public Tiger(String name) {

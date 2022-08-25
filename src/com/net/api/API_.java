@@ -19,6 +19,7 @@ public class API_ {
         System.out.println("host1=" + host1);//DESKTOP-S4MP84S/192.168.12.1
 
         //3. 根据域名返回 InetAddress对象, 比如 www.baidu.com 对应
+        // 也可以终端:  ping www.baidu.com
         InetAddress host2 = InetAddress.getByName("www.baidu.com");
         System.out.println("host2=" + host2);//www.baidu.com / 110.242.68.4
 

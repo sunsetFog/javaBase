@@ -1,8 +1,9 @@
-package com.generic_.generic;
+package com.generic_.study;
 
 /**
  * @author 韩顺平
  * @version 1.0
+ * 泛型的理解
  */
 public class Generic03 {
     public static void main(String[] args) {

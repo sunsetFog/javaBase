@@ -8,6 +8,7 @@ import java.io.*;
  * 演示使用BufferedOutputStream 和 BufferedInputStream使用
  * 使用他们，可以完成二进制文件拷贝.
  * 思考：字节流可以操作二进制文件，可以操作文本文件吗？当然可以
+ * 二进制文件和不是二进制文件都可以操作
  */
 public class BufferedCopy02 {
     public static void main(String[] args) {
@@ -16,8 +17,8 @@ public class BufferedCopy02 {
 //        String destFilePath = "e:\\hsp.jpg";
 //        String srcFilePath = "e:\\0245_韩顺平零基础学Java_引出this.avi";
 //        String destFilePath = "e:\\hsp.avi";
-        String srcFilePath = "D:\\upload\\a.txt";
-        String destFilePath = "D:\\upload\\news2.txt";
+        String srcFilePath = "D:\\upload\\1.png";
+        String destFilePath = "D:\\upload\\2.png";
 
         //创建BufferedOutputStream对象BufferedInputStream对象
         BufferedInputStream bis = null;

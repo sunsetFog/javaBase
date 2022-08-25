@@ -17,7 +17,7 @@ public class TCPFileUploadClient {
         Socket socket = new Socket(InetAddress.getLocalHost(), 8888);
         //创建读取磁盘文件的输入流
         //String filePath = "e:\\qie.png";
-        String filePath = "e:\\abc.mp4";
+        String filePath = "d:\\upload\\1.png";
         BufferedInputStream bis  = new BufferedInputStream(new FileInputStream(filePath));
 
         //bytes 就是filePath对应的字节数组
@@ -26,7 +26,8 @@ public class TCPFileUploadClient {
         //通过socket获取到输出流, 将bytes数据发送给服务端
         BufferedOutputStream bos = new BufferedOutputStream(socket.getOutputStream());
         bos.write(bytes);//将文件对应的字节数组的内容，写入到数据通道
-        bis.close();
+        bos.flush();//把内容刷新到数据通道
+
         socket.shutdownOutput();//设置写入数据的结束标记
 
         //=====接收从服务端回复的消息=====
@@ -38,6 +39,7 @@ public class TCPFileUploadClient {
 
 
         //关闭相关的流
+        bis.close();
         inputStream.close();
         bos.close();
         socket.close();

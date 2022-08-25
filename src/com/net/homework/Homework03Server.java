@@ -33,9 +33,9 @@ public class Homework03Server {
 
         String resFileName = "";
         if("高山流水".equals(downLoadFileName)) {
-            resFileName = "src\\高山流水.mp3";
+            resFileName = "src\\高山流水.png";
         } else {
-            resFileName = "src\\无名.mp3";
+            resFileName = "src\\无名.png";
         }
 
         //4. 创建一个输入流，读取文件

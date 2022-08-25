@@ -34,7 +34,7 @@ public class Homework03Client {
         //5. 得到一个输出流，准备将 bytes 写入到磁盘文件
         //比如你下载的是 高山流水 => 下载的就是 高山流水.mp3
         //    你下载的是 韩顺平 => 下载的就是 无名.mp3  文件名 韩顺平.mp3
-        String filePath = "e:\\" + downloadFileName + ".mp3";
+        String filePath = "d:\\upload\\" + downloadFileName + ".png";
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
         bos.write(bytes);
 

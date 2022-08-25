@@ -7,9 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+    节点流
+    读取文件
  */
 public class FileReader_ {
     public static void main(String[] args) {

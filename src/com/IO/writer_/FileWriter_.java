@@ -3,14 +3,14 @@ package com.IO.writer_;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- * @author 韩顺平
- * @version 1.0
- */
+/*
+节点流
+写入内容
+*/
 public class FileWriter_ {
     public static void main(String[] args) {
 
-        String filePath = "e:\\note.txt";
+        String filePath = "d:\\upload\\note.txt";
         //创建FileWriter对象
         FileWriter fileWriter = null;
         char[] chars = {'a', 'b', 'c'};

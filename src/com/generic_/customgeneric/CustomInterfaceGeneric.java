@@ -1,6 +1,6 @@
 package com.generic_.customgeneric;
 
-// 泛型接口
+// 自定义泛型接口
 public class CustomInterfaceGeneric {
     public static void main(String[] args) {
 

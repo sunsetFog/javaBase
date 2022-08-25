@@ -6,11 +6,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-/**
- * @author 韩顺平
- * @version 1.0
- * 演示FileInputStream的使用(字节输入流 文件--> 程序)
- */
+/*
+    读取文件：
+    字节流》字节输入流FileInputStream
+*/
 public class FileInputStream_ {
     public static void main(String[] args) {
         readFile01();

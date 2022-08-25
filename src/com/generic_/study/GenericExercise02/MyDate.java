@@ -1,10 +1,10 @@
-package com.generic_.generic;
+package com.generic_.study.GenericExercise02;
 
 /**
  * @author 韩顺平
  * @version 1.0
  */
-public class MyDate implements Comparable<MyDate>{
+public class MyDate implements Comparable<MyDate>{// 实现Comparable排序类，为了重写compareTo方法
     private int year;
     private int month;
     private int day;

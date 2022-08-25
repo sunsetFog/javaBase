@@ -3,11 +3,11 @@ package com.IO.reader_;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-/**
- * @author 韩顺平
- * @version 1.0
- * 演示bufferedReader 使用
- */
+/*
+    字符流
+    演示bufferedReader 使用
+    读取文件
+*/
 public class BufferedReader_ {
     public static void main(String[] args) throws Exception {
 

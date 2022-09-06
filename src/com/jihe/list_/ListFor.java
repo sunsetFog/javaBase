@@ -2,15 +2,14 @@ package com.jihe.list_;
 
 import java.util.*;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+    List 接口的实现子类  ArrayList Vector LinkedList  都可以遍历
+    ArrayList线程不安全 Vector线程安全
+    ArrayList，Vector可变数组
  */
 public class ListFor {
     @SuppressWarnings({"all"})
     public static void main(String[] args) {
-
-        //List 接口的实现子类 Vector LinkedList
         //List list = new ArrayList();
         //List list = new Vector();
         List list = new LinkedList();

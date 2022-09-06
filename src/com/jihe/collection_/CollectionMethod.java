@@ -15,17 +15,17 @@ public class CollectionMethod {
         list.add("jack");
         list.add(10);//list.add(new Integer(10))
         list.add(true);
-        System.out.println("list=" + list);
+        System.out.println("--add--list=" + list);
 //        remove:删除指定元素
         //list.remove(0);//删除第一个元素
         list.remove(true);//指定删除某个元素
-        System.out.println("list=" + list);
+        System.out.println("--remove--list=" + list);
 //        contains:查找元素是否存在
-        System.out.println(list.contains("jack"));//T
+        System.out.println("--contains--"+list.contains("jack"));//T
 //        size:获取元素个数
-        System.out.println(list.size());//2
+        System.out.println("--size--"+list.size());//2
 //        isEmpty:判断是否为空
-        System.out.println(list.isEmpty());//F
+        System.out.println("--isEmpty--"+list.isEmpty());//F
 //        clear:清空
         list.clear();
         System.out.println("list=" + list);

@@ -64,7 +64,7 @@ public class MapFor {
         Iterator iterator3 = entrySet.iterator();
         while (iterator3.hasNext()) {
             Object entry =  iterator3.next();
-            //System.out.println(next.getClass());//HashMap$Node -实现-> Map.Entry (getKey,getValue)
+            //System.out.println(entry.getClass());//HashMap$Node -实现-> Map.Entry (getKey,getValue)
             //向下转型 Map.Entry
             Map.Entry m = (Map.Entry) entry;
             System.out.println(m.getKey() + "-" + m.getValue());

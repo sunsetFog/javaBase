@@ -1,8 +1,7 @@
 package com.enum_;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+演示字定义枚举实现
  */
 public class Enumeration02 {
     public static void main(String[] args) {
@@ -11,7 +10,6 @@ public class Enumeration02 {
     }
 }
 
-//演示字定义枚举实现
 class Season {//类
     private String name;
     private String desc;//描述

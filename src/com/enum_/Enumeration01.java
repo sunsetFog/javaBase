@@ -1,5 +1,5 @@
 package com.toEnum;
-// 推出枚举
+// 引出枚举
 public class Enumeration01 {
     public static void main(String[] args) {
         //使用

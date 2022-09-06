@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * @author 韩顺平
  * @version 1.0
+ * 冒泡排序
  */
 @SuppressWarnings({"all"})
 public class ListExercise02 {

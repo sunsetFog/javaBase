@@ -48,7 +48,7 @@ public class SetMethod {
             System.out.println("o=" + o);
         }
 
-        //set 接口对象，不能通过索引来获取
+        //set 接口对象，不能通过索引来获取，所以不能普通for循环
 
 
     }

@@ -2,7 +2,7 @@ package com.class_.super_;
 /*
     extends关键字，类的继承：构造器与super关键字
     extends一个子类只能拥有一个父类
-    继承的本质：找属性从子类找，没就找父类，没就找爷类
+    继承的本质：找属性从子类找，没就找父类，没就找爷类，直到Object类
 */
 public class Children extends Parent {
     public static void main(String[] args) {

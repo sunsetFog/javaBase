@@ -2,15 +2,15 @@ package com.jihe.map_;
 
 import java.util.Hashtable;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+    Hashtable线程安全，HashMap线程不安全
  */
 @SuppressWarnings({"all"})
 public class HashTableExercise {
     public static void main(String[] args) {
         Hashtable table = new Hashtable();//ok
         table.put("john", 100); //ok
+        // Hashtable健值不能为null
         //table.put(null, 100); //异常 NullPointerException
         //table.put("john", null);//异常 NullPointerException
         table.put("lucy", 100);//ok

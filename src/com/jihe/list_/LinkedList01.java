@@ -1,8 +1,7 @@
 package com.jihe.list_;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+模拟双向列表
  */
 public class LinkedList01 {
     public static void main(String[] args) {
@@ -60,7 +59,7 @@ public class LinkedList01 {
         //让first 再次指向jack
         first = jack;//让first引用指向jack,就是双向链表的头结点
 
-        System.out.println("===从头到尾进行遍历===");
+        System.out.println("=add=从头到尾进行遍历===");
         while (true) {
             if(first == null) {
                 break;
@@ -72,7 +71,7 @@ public class LinkedList01 {
 
         last = hsp; //让last 重新指向最后一个结点
         //演示，从尾到头的遍历
-        System.out.println("====从尾到头的遍历====");
+        System.out.println("=add=从尾到头的遍历====");
         while (true) {
             if(last == null) {
                 break;

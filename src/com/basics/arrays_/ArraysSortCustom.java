@@ -3,9 +3,8 @@ package com.basics.arrays_;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/**
- * @author 韩顺平
- * @version 1.0
+/*
+冒泡排序
  */
 public class ArraysSortCustom {
     public static void main(String[] args) {
@@ -16,7 +15,7 @@ public class ArraysSortCustom {
         bubble02(arr, new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                int i1 = (Integer) o1;
+                int i1 = (Integer) o1;// 向下转型
                 int i2 = (Integer) o2;
                 return i2 - i1;// return i2 - i1;
             }

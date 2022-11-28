@@ -3,6 +3,7 @@ package com.basics.date_;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 
 /**
@@ -38,5 +39,12 @@ public class Date01 {
         Date parse = sdf.parse(s);
         System.out.println("parse=" + sdf.format(parse));
 
+        // 图片重命名
+        String dataStr = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+        System.out.println("方式1: 时间格式="+dataStr);// 20221128153505
+        String uuidName = UUID.randomUUID().toString();
+        System.out.println("方式2: 随机ID="+uuidName);// 5c05352b-8074-4fea-8be1-006e3a2c78b4
+        long currentTimeMillis = System.currentTimeMillis();
+        System.out.println("方式3: 时间戳="+currentTimeMillis);// 1669619217866
     }
 }

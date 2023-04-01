@@ -46,5 +46,7 @@ public class Date01 {
         System.out.println("方式2: 随机ID="+uuidName);// 5c05352b-8074-4fea-8be1-006e3a2c78b4
         long currentTimeMillis = System.currentTimeMillis();
         System.out.println("方式3: 时间戳="+currentTimeMillis);// 1669619217866
+        long time1 = new Date().getTime();
+        System.out.println("方式4: 时间戳="+time1);// 1669734385476
     }
 }
